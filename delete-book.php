@@ -19,9 +19,9 @@ include "templates/header.php";
     require "data/connect-db.php";
     require "action/delete-book-form.php";
     require "action/delete-book-action.php";
-    if(!isset($_POST['search_kw'])){
-        require "action/list-book-delete.php";
-    }
+    require "action/list-book-delete.php";
+    echo "<br>";
+    page_nav_links($paging);
 ?>
 <?php
 include "templates/footer.php";
