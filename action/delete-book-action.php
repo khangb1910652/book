@@ -2,19 +2,22 @@
     require "data/connect-db.php";
     if (isset($_POST['delete']) && isset($_POST['id_book'])) {
         $id_book = $_POST['id_book'];
-        $query = "DELETE FROM book WHERE id_book='$id_book'";
+        $query = "delete from book where id_book='$id_book'";
+        $query1 = "select * from book where id_book='$id_book'";
+        $result = $conn->query($query1);
         if (!$conn->query($query)) {
-                echo <<<_DEL_OK_PROMPT
+                echo <<<_WARING
                     <script>
-                    alert ("<h3> DELETE failed: " + $id_book + "+ Error: " + $conn_error + "</h3>");
+                    alert ("<h3> DELETE failed!"</h3>");
                     </script>
-                _DEL_OK_PROMPT;
+                _WARING;
         }else {
-            echo <<<_DEL_OK_PROMPT
+            $row = $result->fetch_assoc();
+            echo <<<_WARING
                 <script>
-                alert ("*Book '$id_book' has been deleted");
+                alert ("'$row[name_book]' has been deleted");
                 </script>
-            _DEL_OK_PROMPT;
+            _WARING;
         }
     }
 ?>

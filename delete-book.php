@@ -17,7 +17,7 @@ include "templates/header.php";
 ?>
 <?php
     require "data/connect-db.php";
-    require "action/delete-book-form.php";
+    require "action/form.php";
     require "action/delete-book-action.php";
     require "action/list-book-delete.php";
     echo "<br>";

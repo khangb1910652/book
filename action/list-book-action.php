@@ -2,6 +2,7 @@
     function list_book(){
         $record_ppage = 3;
         require "data/connect-db.php";
+        require "action/form.php";
         $query = "SELECT count(*) FROM book ";
         $result = $conn->query($query);
         $row = $result->fetch_row();
@@ -21,16 +22,10 @@
         echo <<<_title
             <h2>Total:  $kq books</h2>
         _title;
-        while ($row = $result->fetch_assoc())
-            echo <<<_LIST_FORM
-                <img src="$row[img]"> <br>
-                Title Book: $row[name_book] <br> 
-                Author: $row[author] <br> 
-                Describe: $row[des] <br> 
-                Date Postted: $row[date] <br> 
-                Category: $row[name_cat]<br>
-                <hr>
-            _LIST_FORM;
+        while ($row = $result->fetch_assoc()){
+            form_book($row);
+            echo "<hr>";
+        }
         if ($result->num_rows == 0)
             echo <<<_ADD_OK_PROMPT
                 <script>

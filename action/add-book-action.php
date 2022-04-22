@@ -22,7 +22,7 @@
     else
     echo <<<_ADD_OK_PROMPT
         <script>
-        alert ("*$bookname has been posted");
+        alert ("$bookname has been posted");
         </script>
         _ADD_OK_PROMPT;
     $conn->close();

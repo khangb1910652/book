@@ -2,6 +2,7 @@
     $record_ppage = 3;
     function search($keyword) {
         require "data/connect-db.php";
+        require "form.php";
         global $record_ppage;
         $search_kw = str_replace(" ", "%' OR name_book LIKE '%", trim($keyword));
 
@@ -28,16 +29,10 @@
         echo <<<_title
             <h2>Search results:  $kq books</h2>
         _title;
-        while ($row = $result->fetch_assoc())
-            echo <<<_LIST_FORM
-                <img src="$row[img]"> <br>
-                Title Book: $row[name_book] <br> 
-                Author: $row[author] <br> 
-                Describe: $row[des] <br> 
-                Date Postted: $row[date] <br> 
-                Category: $row[name_cat]<br>
-                <hr>
-            _LIST_FORM;
+        while ($row = $result->fetch_assoc()){
+            form_book($row);
+            echo "<hr>";
+        }
         if ($result->num_rows == 0)
             echo <<<_ADD_OK_PROMPT
                 <script>
