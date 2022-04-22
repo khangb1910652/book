@@ -18,10 +18,10 @@
             echo "<hr>";
         }
         if ($result->num_rows == 0)
-            echo <<<_ADD_OK_PROMPT
+            echo <<<_WARING
                 <script>
                     alert ("No title found");
                 </script>
-            _ADD_OK_PROMPT;
+                _WARING;
     }
 ?>

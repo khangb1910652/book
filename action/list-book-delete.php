@@ -26,11 +26,11 @@
         echo "<hr>";
     }
     if ($result->num_rows == 0)
-        echo <<<_ADD_OK_PROMPT
+        echo <<<_WARING
             <script>
                 alert ("No book!");
             </script>
-        _ADD_OK_PROMPT;
+        _WARING;
     function page_nav_links($paging) {
         echo "Page $paging[p_no]/$paging[p_total]:&nbsp&nbsp&nbsp";
         if ($paging['p_prev'] > 0) {

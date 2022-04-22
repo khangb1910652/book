@@ -20,11 +20,11 @@
     if (!$conn->query($query))
         echo "<h3>INSERT failed. " . $mysql_error() . "</h3>";
     else
-    echo <<<_ADD_OK_PROMPT
+    echo <<<_WARING
         <script>
         alert ("$bookname has been posted");
         </script>
-        _ADD_OK_PROMPT;
+        _WARING;
     $conn->close();
     }
 ?>
