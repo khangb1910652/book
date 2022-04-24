@@ -24,7 +24,8 @@ include "templates/header.php";
         <?php require "action/options-category.php";?>
     </select>
     <br>
-    <input type="submit" name="submit" value="Submit">
+    <input type="submit" name="submit" value="Add">
+    <input type="reset" value="Clear">
 </form>
 <?php
 include "templates/footer.php";

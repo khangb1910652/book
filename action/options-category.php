@@ -8,5 +8,5 @@
         echo "<option value='" . $row['id_cat'] . "'>"
             . $row['name_cat'] . "</option>";
         }
-    $conn->close();
+    // $conn->close();
 ?>

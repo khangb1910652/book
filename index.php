@@ -20,7 +20,7 @@ include "templates/header.php";
         <a href="update-book.php"><strong>Update Book</strong></a>
     </li> -->
     <li>
-        <a href="delete-book.php"><strong>Delete Book</strong></a>
+        <a href="edit-delete-book.php"><strong>Edit & Delete</strong></a>
     </li>
 </ul>
 <?php

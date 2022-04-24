@@ -13,7 +13,8 @@ include "templates/header.php";
     <label for="namecat">Category</label>
     <input type="text" name="namecat" id="namecat">
     <br>
-    <input type="submit" name="submit" value="Submit">
+    <input type="submit" name="submit" value="Add">
+    <input type="reset" value="Clear">
 </form>
     <br> <a href="post-book.php">Go to post book</a>
 <?php
