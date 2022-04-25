@@ -1,6 +1,6 @@
 <?php
     function list_book(){
-        $record_ppage = 3;
+        $record_ppage = 5;
         require "data/connect-db.php";
         require "action/form.php";
         $query = "SELECT count(*) FROM book ";

@@ -1,30 +1,33 @@
 <?php
     require "data/connect-db.php";
     if(isset($_POST["submit"])){
-        if ($_FILES['img']['error'] == 0) {
-            move_uploaded_file($_FILES["img"]["tmp_name"],
-            "image/" . $_FILES["img"]["name"]);
-            }
+        if(!empty($_POST['bookname']) && !empty($_POST['author']) && !empty($_POST['des']) && !empty($_POST['idcat']) && $_FILES['img']['error'] == 0){
+            move_uploaded_file($_FILES["img"]["tmp_name"], "image/" . $_FILES["img"]["name"]);
+            $bookname = $_POST['bookname'];
+            $author = $_POST['author'];
+            $des = $_POST['des'];
+            $img = ("image/" . $_FILES["img"]["name"]);
+            $idcat = $_POST['idcat'];
+            $query = "INSERT INTO book VALUES "
+            . "(0,'$bookname', '$author', '$des', '$img', current_timestamp, '$idcat')";
+            if (!$conn->query($query))
+                echo <<<_WARING
+                <script>
+                    alert ("Failed please try again!");
+                </script>
+                _WARING;
             else
-            echo "Upload error: " . $_FILES['up-file']['error'];
-
-        $bookname = $_POST['bookname'];
-        $author = $_POST['author'];
-        $des = $_POST['des'];
-        $img = ("image/" . $_FILES["img"]["name"]);
-        $idcat = $_POST['idcat'];
-
-        $query = "INSERT INTO book VALUES "
-    . "(0,'$bookname', '$author', '$des', '$img', current_timestamp, '$idcat')";
-
-    if (!$conn->query($query))
-        echo "<h3>INSERT failed. " . $mysql_error() . "</h3>";
-    else
-    echo <<<_WARING
-        <script>
-        alert ("$bookname has been posted");
-        </script>
-        _WARING;
-    $conn->close();
+                echo <<<_WARING
+                    <script>
+                    alert ("$bookname has been posted");
+                    </script>
+                    _WARING;
+                $conn->close();
+            }else
+                echo <<<_WARING
+                    <script>
+                        alert ("Fields cannot be left blank!");
+                    </script>
+                _WARING;
     }
 ?>

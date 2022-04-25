@@ -1,5 +1,5 @@
 <?php
-    $record_ppage = 3;
+    $record_ppage = 5;
     $query = "SELECT count(*) FROM book ";
     $result = $conn->query($query);
     $row = $result->fetch_row();

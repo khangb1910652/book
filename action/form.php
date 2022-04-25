@@ -1,7 +1,7 @@
 <?php
     function del_form($row) {
         echo <<<_DEL_FORM
-        <form action="delete-book.php" method="POST">
+        <form action="edit-delete-book.php" method="POST">
             <input type="submit" value="DELETE">
             <input type="hidden" name="delete" value="yes">
             <input type="hidden" name="id_book" value="$row[id_book]">
@@ -31,7 +31,7 @@
     }
     function form_edit_book($row){
         echo <<<_FORM_EDIT_BOOK
-        <form method="POST" action = "" enctype="multipart/form-data">
+        <form method="POST" action = "edit-book.php" enctype="multipart/form-data">
             <input type="hidden" name="id_book" id="id_book" value="$row[id_book]">
             <label for="bookname">Book Name</label>
             <input type="text" name="bookname" id="bookname" value="$row[name_book]">
@@ -46,6 +46,7 @@
             <label for="img">Image</label><br>
             <img src="$row[img]"> <br>
             <input type="hidden" name="img_cur" id="img_cur" value="$row[img]">
+            <label for="img">Choose another picture</label>
             <input type="file" name="img" id="img">
             <br>
             <label for="idcat">Caterogy</label>

@@ -10,7 +10,7 @@ include "templates/header.php";
         <br>
 </form>
 <?php
-    require 'action/find-book-delete.php';
+    require 'action/find-book-edit-delete.php';
     if (isset($_POST['search_kw'])) {
         search($_POST['search_kw']);
     }

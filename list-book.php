@@ -9,7 +9,6 @@ include "templates/header.php";
         <input type="submit" value="Search">
         <br>
 </form>
-
 <h2>List Book</h2>
 <?php
     require "action/list-book-action.php";

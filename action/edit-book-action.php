@@ -21,8 +21,10 @@
     else
         echo <<<_WARING
             <script>
-            alert ("'$bookname' has been edited");
+                alert ("'$bookname' has been edited");
             </script>
         _WARING;
+        echo "Return to page <a href='edit-delete-book.php'>Edit and Delete</a> in 10 seconds!";
+        echo header("refresh: 10; url = edit-delete-book.php");
     }
 ?>

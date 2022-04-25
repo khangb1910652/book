@@ -1,6 +1,8 @@
 -- drop database project;
 -- create database project;
 -- use project;
+-- SELECT * FROM book b join category c on b.id_cat = c.id_cat;
+
 create table category(
 	id_cat varchar(50) primary key,
     name_cat varchar(50) not null
