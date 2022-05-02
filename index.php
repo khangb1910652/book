@@ -2,6 +2,15 @@
 $page_title = "Book Management";
 include "templates/header.php";
 ?>
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("location:login.php");
+} else {
+    echo "Wellcome " . $_SESSION['username'];
+}
+?>
+
 <ul>
     
     <li>
@@ -22,7 +31,12 @@ include "templates/header.php";
     <li>
         <a href="edit-delete-book.php"><strong>Edit & Delete</strong></a>
     </li>
+    <li>
+        <a href="signin.php"><strong>Add A Management Account</strong></a>
+    </li>
 </ul>
+
+<a href="logout.php">Log out</a>
 <?php
 include "templates/footer.php";
 ?>
