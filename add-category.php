@@ -1,6 +1,6 @@
 <?php
 $page_title = "Book Management";
-include "templates/header.php";
+include "templates/header-manage.php";
 ?>
 <h2>Post Category</h2>
 <?php
@@ -19,5 +19,5 @@ include "templates/header.php";
 </form>
     <br> <a href="add-book.php">Go to post book</a>
 <?php
-include "templates/footer.php";
+include "templates/footer-manage.php";
 ?>

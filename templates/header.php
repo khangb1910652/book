@@ -1,7 +1,3 @@
-<?php
-    // session_start();
-?>
-<!-- <!DOCTYPE html> -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,3 +10,4 @@
     <body>
         <h1 class = "page-title"><?php echo $page_title; ?></h1>
         <hr>
+

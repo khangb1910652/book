@@ -1,6 +1,6 @@
 <?php
 $page_title = "Book Management";
-include "templates/header.php";
+include "templates/header-manage.php";
 ?>
 <h2>Edit Book</h2>
 <?php
@@ -17,6 +17,6 @@ include "templates/header.php";
     require "action/edit-book-action.php";
 ?>
 <?php
-include "templates/footer.php";
+include "templates/footer-manage.php";
 ?>
 

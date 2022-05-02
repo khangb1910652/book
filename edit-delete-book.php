@@ -1,6 +1,6 @@
 <?php
 $page_title = "Book Management";
-include "templates/header.php";
+include "templates/header-manage.php";
 ?>
 <h2>Delete & Delete Book</h2>
 <form action="delete-book-for-find.php" method="POST">
@@ -25,6 +25,6 @@ include "templates/header.php";
     page_nav_links($paging);
 ?>
 <?php
-include "templates/footer.php";
+include "templates/footer-manage.php";
 ?>
 

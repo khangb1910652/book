@@ -1,6 +1,6 @@
 <?php
 $page_title = "Book Management";
-include "templates/header.php";
+include "templates/header-manage.php";
 ?>
 <h2>Update Book</h2>
 <?php
@@ -38,5 +38,5 @@ include "templates/header.php";
 </form>
 <br> <a href="index.php">Back to home</a>
 <?php
-include "templates/footer.php";
+include "templates/footer-manage.php";
 ?>

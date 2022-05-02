@@ -29,7 +29,7 @@ if (isset($_POST["login"])) {
             $row = $result->fetch_assoc();
             $_SESSION["username"] = $row["username"];
             $_SESSION["password"] = $row["password"];  
-            header("location: index.php");
+            header("location: management.php");
         }
     }
 }

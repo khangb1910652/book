@@ -1,7 +1,7 @@
 <?php
 $page_title = "Book Management";
-include "templates/header.php";
-require "action/signin-action.php"
+include "templates/header-manage.php";
+require "action/signup-action.php"
 ?>
 <h2>Sign In</h2>
 
@@ -14,7 +14,7 @@ require "action/signin-action.php"
         <br>
         <input type="submit" name="signin" value="Sign In">
     </form>
-    <br> <a href="login.php">Go to login</a>
+    <!-- <br> <a href="login.php">Go to login</a> -->
 <?php
-include "templates/footer.php";
+include "templates/footer-manage.php";
 ?>

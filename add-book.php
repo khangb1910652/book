@@ -1,6 +1,6 @@
 <?php
 $page_title = "Book Management";
-include "templates/header.php";
+include "templates/header-manage.php";
 ?>
 <h2>Add Book</h2>
 <?php
@@ -28,5 +28,5 @@ include "templates/header.php";
     <input type="reset" value="Clear">
 </form>
 <?php
-include "templates/footer.php";
+include "templates/footer-manage.php";
 ?>
