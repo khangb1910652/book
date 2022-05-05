@@ -1,11 +1,11 @@
 -- drop database project;
 -- create database project;
 -- use project;
--- SELECT * FROM book b join category c on b.id_cat = c.id_cat;
 create table user(
 	username varchar(50) primary key,
     password varchar(50) not null
 );
+insert into user value ("admin","d033e22ae348aeb5660fc2140aec35850c4da997");
 create table category(
 	id_cat varchar(50) primary key,
     name_cat varchar(50) not null
