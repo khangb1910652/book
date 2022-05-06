@@ -1,6 +1,6 @@
 <?php
     function list_book(){
-        $record_ppage = 5;
+        $record_ppage = 6;
         require "data/connect-db.php";
         require "action/form.php";
         $query = "SELECT count(*) FROM book ";
@@ -19,13 +19,11 @@
         $result = $conn->query($query)
         or die ("DB accessed failed: " . $conn->error);
         $kq = $row[0];
-        echo <<<_title
-            <h2>Total:  $kq books</h2>
-        _title;
+        echo "<div class='body'>";
         while ($row = $result->fetch_assoc()){
             form_book($row);
-            echo "<hr>";
         }
+        echo "</div>";
         if ($result->num_rows == 0)
             echo <<<_WARING
                 <script>
@@ -35,15 +33,17 @@
             return $paging;
     }
     function page_nav_links($paging) {
-        echo "Page $paging[p_no]/$paging[p_total]:&nbsp&nbsp&nbsp";
-        if ($paging['p_prev'] > 0) {
-            echo "<a href='list-book.php?" .
+        echo "<div class='pagination'>";
+
+        echo "<a class='button' href='list-book.php?" .
             "&page=" . $paging['p_prev'] ."'>Previous</a>&nbsp&nbsp&nbsp";
-            }
-            if ($paging['p_next'] > 0) {
-                echo "<a href='list-book.php?" .
-                "&page=" . $paging['p_next'] ."'>Next</a>";
-        }
+            
+        echo "<input value=$paging[p_no]>&nbsp&nbsp";
+        echo "<div> of $paging[p_total]</div>&nbsp&nbsp&nbsp";
+        echo "<a class='button' href='list-book.php?" .
+            "&page=" . $paging['p_next'] ."'>Next</a>";
+            
+        echo "</div>";
     }
 
 ?>

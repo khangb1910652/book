@@ -3,17 +3,32 @@ $page_title = "Book Management";
 include "templates/header.php";
 require "action/login-action.php";
 ?>
-<h2>Login</h2>
 
-<form action="" method="POST">
-        <label for="username">User Name</label>
-        <input type="text" name="username" value="">
-        <br>
-        <label for="password">Password</label>
-        <input type="password" name="password" value="">
-        <br>
-        <input type="submit" name="login" value="Log In">
-    </form>
+<div class='main_login'>
+
+        <form class='main_form' action="" method="POST">
+            <p class="form_header">
+                <svg
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+                
+                >
+                <path
+                    d="m64 496l0-256 48 0 0-80c0-71 57-128 128-128l16 0c71 0 128 57 128 128l0 80 48 0 0 256z m172-131l-12 83 48 0-12-83c12-5 20-17 20-30 0-18-14-32-32-32-18 0-32 14-32 32 0 13 8 25 20 30z m100-197c0-49-39-88-88-88-49 0-88 39-88 88l0 72 176 0z"
+                />
+                </svg>
+                &nbsp&nbspLogin Now
+            </p>
+                <div class="form_username">
+                    <input placeholder="Username" class="input_username" type="text" name="username" value="">
+                </div>
+                <div class="form_password">
+                    <input placeholder="Password" class="input_password" type="password" name="password" value="">
+                </div>
+                <input class='button' type="submit" name="login" value="Login">
+        </form>
+</div>
 <?php
-include "templates/footer.php";
+// include "templates/footer.php";
 ?>
