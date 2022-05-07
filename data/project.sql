@@ -18,6 +18,7 @@ create table book(
     img varchar(100) not null,
     date timestamp default current_timestamp,
     id_cat varchar(50) references caterogy(id_cat)
+   --  username varchar(50) references user(username)
 );
 INSERT INTO `category` (`id_cat`, `name_cat`) VALUES
 ('comic', 'comic'),
