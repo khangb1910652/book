@@ -2,7 +2,7 @@
     function del_form($row) {
         echo <<<_DEL_FORM
         <form action="edit-delete-book.php" method="POST">
-            <input type="submit" value="DELETE">
+            <input class='button' style='background-color: #fff; color: #000;' type="submit" value="DELETE">
             <input type="hidden" name="delete" value="yes">
             <input type="hidden" name="id_book" value="$row[id_book]">
         </form>
@@ -11,7 +11,7 @@
     function edit_form($row) {
         echo <<<_EDIT_FORM
         <form action="edit-book.php" method="POST">
-            <input type="submit" value="EDIT">
+            <input class='button' type="submit" value="EDIT">
             <input type="hidden" name="edit" value="yes">
             <input type="hidden" name="id_book" value="$row[id_book]">
         </form> 

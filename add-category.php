@@ -2,21 +2,20 @@
 $page_title = "Book Management";
 include "templates/header-manage.php";
 ?>
-<h2>Post Category</h2>
 <?php
     require "action/add-category-action.php";
 ?>
-
-<form method="POST">
-    <label for="idcat">ID Category</label>
-    <input type="text" name="idcat" id="idcat">
-    <br>
-    <label for="namecat">Category</label>
-    <input type="text" name="namecat" id="namecat">
-    <br>
-    <input type="submit" name="submit" id="submit" value="Add">
-    <input type="reset" value="Clear">
-</form>
+<div class='main_login'>
+    <form class='main_form' method="POST">
+        <h2 class='h2'>Add Category</h2>
+        <input class='input_username' placeholder='ID Category' type="text" name="idcat" id="idcat">
+        <input class='input_username' placeholder='Category' type="text" name="namecat" id="namecat">
+        <div class='buttons_flex'>
+            <input class='button' type="submit" name="submit" id="submit" value="Add">&nbsp&nbsp
+            <input class='button' style="background-color: white; color: #000" type="reset" value="Clear">
+        </div>
+    </form>
+</div>
     <br> <a href="add-book.php">Go to post book</a>
 <?php
 include "templates/footer-manage.php";

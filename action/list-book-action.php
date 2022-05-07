@@ -39,7 +39,7 @@
             "&page=" . $paging['p_prev'] ."'>Previous</a>&nbsp&nbsp&nbsp";
             
         echo "<input value=$paging[p_no]>&nbsp&nbsp";
-        echo "<div> of $paging[p_total]</div>&nbsp&nbsp&nbsp";
+        echo "<div> of &nbsp$paging[p_total]</div>&nbsp&nbsp&nbsp";
         echo "<a class='button' href='list-book.php?" .
             "&page=" . $paging['p_next'] ."'>Next</a>";
             

@@ -7,6 +7,25 @@ body {
     font-size: 18px;
 }
 
+div.button_flex {
+    display: flex;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_grow {
+    flex-grow: 1;
+}
+
 div.main_login {
     display: flex;
     align-items: center;
@@ -32,15 +51,17 @@ div.form_username {
    width: 320px;
 }
 
+div.flex_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 input.input_username {
     border-width: 1px;
     padding: 6px 4px;
     width: 320px;
-}
-
-div.form_password {
-    margin-bottom: 10px;
-    width: 320px;
+    margin-bottom: 20px;
 }
  
 input.input_password {
@@ -58,12 +79,18 @@ p.form_header {
     align-items: center;
 }
 
+h2.h2 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
 input.button {
     width: 100px;
     height: 30px;
     border: 1px solid #5551ff;
     background-color: #5551ff;
     color: white;
+    cursor: pointer;
 }
 
 input:focus {

@@ -16,15 +16,19 @@
     $result = $conn->query($query)
     or die ("DB accessed failed: " . $conn->error);
     $kq = $row[0];
-    echo <<<_title
-        <h2>Total:  $kq books</h2>
-    _title;
+    echo "<div class='body'>";
     while ($row = $result->fetch_assoc()){
+        echo "<div class='flex_column'>";
         form_book($row);
-        del_form($row);
-        edit_form($row);
-        echo "<hr>";
+            echo "<div class='flex_center flex_grow'>";
+            edit_form($row);
+            echo "&nbsp&nbsp&nbsp";
+            del_form($row);
+            echo "</div>";
+            // echo "</div>";
+        echo "</div>";
     }
+    echo "</div>";
     if ($result->num_rows == 0)
         echo <<<_WARING
             <script>
@@ -32,15 +36,17 @@
             </script>
         _WARING;
     function page_nav_links($paging) {
-        echo "Page $paging[p_no]/$paging[p_total]:&nbsp&nbsp&nbsp";
-        if ($paging['p_prev'] > 0) {
-            echo "<a href='edit-delete-book.php?" .
+        echo "<div class='pagination'>";
+
+        echo "<a class='button' href='list-book.php?" .
             "&page=" . $paging['p_prev'] ."'>Previous</a>&nbsp&nbsp&nbsp";
-            }
-            if ($paging['p_next'] > 0) {
-                echo "<a href='edit-delete-book.php?" .
-                "&page=" . $paging['p_next'] ."'>Next</a>";
-        }
+            
+        echo "<input value=$paging[p_no]>&nbsp&nbsp";
+        echo "<div> of &nbsp$paging[p_total]</div>&nbsp&nbsp&nbsp";
+        echo "<a class='button' href='list-book.php?" .
+            "&page=" . $paging['p_next'] ."'>Next</a>";
+            
+        echo "</div>";
     }
 
 ?>
