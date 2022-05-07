@@ -20,12 +20,18 @@
     function form_book($row){
         echo <<<_FORM_BOOK
             <form id="form_book">
-                <img src="$row[img]"> <br>
-                Title Book: $row[name_book] <br> 
-                Author: $row[author] <br> 
-                Describe: $row[des] <br> 
-                Date Postted: $row[date] <br> 
-                Category: $row[name_cat]<br>
+                <div class='background-card'>
+                    <img src="$row[img]"> 
+                </div>
+                <div class='body-card'>
+                    <div>
+                        <span class='header'>Title Book:</span>$row[name_book]<br> 
+                        <span class='header'>Author:</span>$row[author]<br> 
+                        <span class='header'>Describe:</span> <span class='line-clamp'>$row[des]</span>
+                        <span class='header'>Date Postted:</span>$row[date]<br> 
+                        <span class='header'>Category:</span>$row[name_cat]<br>
+                    </div>
+                </div>
             </form>
         _FORM_BOOK;
     }

@@ -2,8 +2,233 @@ img {
     width: 20%;
     height: auto;
 }
-/* body {
-    margin-left: 20%;
-    margin-right: 20%;
+
+body {
+    font-size: 18px;
+}
+
+div.main_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100vw;
+}
+
+form.main_form {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+div.form_username {
+   margin-bottom: 10px;
+   width: 320px;
+}
+
+input.input_username {
+    border-width: 1px;
+    padding: 6px 4px;
+    width: 320px;
+}
+
+div.form_password {
+    margin-bottom: 10px;
+    width: 320px;
+}
+ 
+input.input_password {
+     border-width: 1px;
+     padding: 6px 4px;
+     width: 320px;
+ 
+}
+
+p.form_header {
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input.button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #5551ff;
+    background-color: #5551ff;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.main {
+    display: flex;
+}
+
+.search-form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px; 
+}
+
+#form_book {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#form_book .background-card {
+    width: 240px;
+    height: 370px;
+    align-self: center;
+}
+
+#form_book .body-card {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    align-self: center;
+}
+
+.nav-bar {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.body {
+    flex-grow: 5;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-content: space-around;
+    justify-items: stretch
+    align-items: stretch
+}
+
+.temp {
+    flex-grow: 3;
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    outline: none;
+    flex-grow: 2;
+  }
+  
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+  
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+  
+#form_book {
+    max-width: 320px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-left-width: 2px;
+border-right-width: 2px;
+    border-radius: 0.25rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    padding: 10px 10px;
+   
+}
+#form_book img {
+    width: 240px;
+    height: 370px;
+    /* background-color: red; */
+}
+#form_book span.header {
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pagination input {
     text-align: center;
-} */
+    padding: 5px 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #f0f3f6'
+    border-color: #000000;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    color: #30244a;
+    line-height: 24px
+    margin: 0px 5px 0px 0px
+    padding: 0px 12px
+    text-align: right
+}
+
+a.button {
+    width: 110px;
+    height: 25px;
+    padding: 5px 5px;
+    border: 1px solid #5551ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: #5551ff;
+    color: white;
+    border-radius: 5px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
