@@ -41,15 +41,22 @@
     }
     function page_nav_links($paging, $search_kw) {
         echo "<div class='pagination'>";
-
-        echo "<a class='button' href='find-book.php?search_kw=$search_kw" .
+        if ($paging['p_prev'] > 0) {
+            echo "<a class='button' href='find-book.php?search_kw=$search_kw" .
+                "&page=" . $paging['p_prev'] ."'>Previous</a>&nbsp&nbsp&nbsp";
+        }else{
+            echo "<a class='button'" .
             "&page=" . $paging['p_prev'] ."'>Previous</a>&nbsp&nbsp&nbsp";
-            
+        };
         echo "<input value=$paging[p_no]>&nbsp&nbsp";
         echo "<div> of &nbsp$paging[p_total]</div>&nbsp&nbsp&nbsp";
-        echo "<a class='button' href='find-book.php?search_kw=$search_kw" .
+        if ($paging['p_next'] > 0) {
+            echo "<a class='button' href='find-book.php?search_kw=$search_kw" .
+                "&page=" . $paging['p_next'] ."'>Next</a>";
+        }else{
+            echo "<a class='button'" .
             "&page=" . $paging['p_next'] ."'>Next</a>";
-            
+        };
         echo "</div>";
     }
 ?>
