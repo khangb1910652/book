@@ -38,7 +38,7 @@ div.main_login {
     width: 100vw;
 }
 
-form.main_form {
+.main_form {
     width: 400px;
     height: 300px;
     border: 2px solid #ccc;
@@ -73,6 +73,46 @@ input.input_password {
      padding: 6px 4px;
      width: 320px;
  
+}
+
+.fill_white {
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(113deg) brightness(102%) contrast(101%);
+    width: 20px;
+}
+
+.fill_purple {
+   filter: invert(31%) sepia(84%) saturate(4215%) hue-rotate(234deg) brightness(101%) contrast(101%);
+}
+
+.custom_button {
+    width: 200px;
+    height: 25px;
+    padding: 5px 5px;
+    border: 1px solid #5551ff;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: #5551ff;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.clear {
+    background-color: white;
+    color: #5551ff;
+}
+
+.header_bar {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.float {
+    flex-grow: 1;
+    float: right;
 }
 
 p.form_header {
@@ -262,7 +302,7 @@ a {
     text-decoration: none;
 }
 .back_to_home{
-    float: right;
+    float: left;
 }
 .log_out{
     float: right;
