@@ -16,7 +16,9 @@ include "templates/header.php";
         $paging = list_book();
         echo "<div class='temp'></div>";
         echo "</div>";
-        page_nav_links($paging);
+        if("$paging[p_total]">0){
+            page_nav_links($paging, $_REQUEST['search_kw']);
+            }
     ?>
 
 <?php
