@@ -4,7 +4,7 @@ include "templates/header-manage.php";
 ?>
 <div class='main'>
     <div class='nav-bar'>
-        <form class='search-form' action="find-book.php" method="POST">
+        <form class='search-form' action="action/find-book-edit-delete.php" method="POST">
             <input placeholder='Type some books' type="search" name="search_kw" value="<?php empty($_REQUEST['search_kw']) || 
                                                                 print $_REQUEST['search_kw'];?>"/>
             <button type="submit" value="Search">
