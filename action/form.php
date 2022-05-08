@@ -30,6 +30,7 @@
                         <span class='header'>Describe:</span> <span class='line-clamp'>$row[des]</span>
                         <span class='header'>Date Postted:</span>$row[date]<br> 
                         <span class='header'>Category:</span>$row[name_cat]<br>
+                        <span class='header'>Post by:</span>$row[username]<br>
                     </div>
                 </div>
             </form>
@@ -58,7 +59,7 @@
             <label for="idcat">Caterogy</label>
             <select name="idcat">
                 <option value=$row[id_cat]>$row[name_cat]</option>
-                <option value=$row[id_cat]>Tạm thời chưa làm được đổi thể loại</option>
+                <option value=$row[id_cat]>Tạm thời chưa đổi thể loại được</option>
             </select>
             <br>
             <input type="submit" name="edit_book" value="EDIT">

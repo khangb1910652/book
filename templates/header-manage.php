@@ -12,9 +12,10 @@
         <hr>
 <?php
 session_start();
-// if (!isset($_SESSION['username'])) {
-//     header("location:login.php");
-// } else {
+if (!isset($_SESSION['username'])) {
+    header("location:login.php");
+} 
+// else {
 //     echo "Wellcome " . $_SESSION['username'];
 // }
 ?>

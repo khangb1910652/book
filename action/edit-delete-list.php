@@ -1,5 +1,5 @@
 <?php
-    $record_ppage = 5;
+    $record_ppage = 6;
     $query = "SELECT count(*) FROM book ";
     $result = $conn->query($query);
     $row = $result->fetch_row();
@@ -43,7 +43,7 @@
             
         echo "<input value=$paging[p_no]>&nbsp&nbsp";
         echo "<div> of &nbsp$paging[p_total]</div>&nbsp&nbsp&nbsp";
-        echo "<a class='button' href='list-book.php?" .
+        echo "<a class='button' href='edit-delete-book.php?" .
             "&page=" . $paging['p_next'] ."'>Next</a>";
             
         echo "</div>";

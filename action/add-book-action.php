@@ -8,8 +8,9 @@
             $des = $_POST['des'];
             $img = ("image/" . $_FILES["img"]["name"]);
             $idcat = $_POST['idcat'];
+            $username = $_SESSION['username'];
             $query = "INSERT INTO book VALUES "
-            . "(0,'$bookname', '$author', '$des', '$img', current_timestamp, '$idcat')";
+            . "(0,'$bookname', '$author', '$des', '$img', current_timestamp, '$idcat','$username')";
             if (!$conn->query($query))
                 echo <<<_WARING
                 <script>
