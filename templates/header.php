@@ -9,5 +9,6 @@
     </head>
     <body>
         <h1 class = "page-title"><?php echo $page_title; ?></h1>
+        <!-- <a href="index.php">Back to home</a> -->
         <hr>
 
