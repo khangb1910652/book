@@ -1,5 +1,5 @@
 <?php
-$page_title = "Book Management";
+$page_title = "Add Category";
 include "templates/header-manage.php";
 ?>
 <?php

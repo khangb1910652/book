@@ -1,5 +1,5 @@
 <?php
-$page_title = "Book Management"; 
+$page_title = "Edit And Delete Book"; 
 include "templates/header-manage.php";
 ?>
 <div class='main'>

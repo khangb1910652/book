@@ -1,8 +1,7 @@
 <?php
-$page_title = "Book Management"; 
+$page_title = "Find Books To Delete And Edit"; 
 include "templates/header-manage.php";
 ?>
-<h2>Edit & Delete Book</h2>
 <div class='main'>
     <div class='nav-bar'>
         <form class='search-form' action="edit-delete-book-for-find.php" method="POST">

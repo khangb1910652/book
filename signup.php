@@ -1,5 +1,5 @@
 <?php
-$page_title = "Book Management";
+$page_title = "Signup";
 include "templates/header-manage.php";
 require "action/signup-action.php"
 ?>
