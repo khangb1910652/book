@@ -30,5 +30,5 @@ require "action/login-action.php";
         </form>
 </div>
 <?php
-// include "templates/footer.php";
+include "templates/footer.php";
 ?>

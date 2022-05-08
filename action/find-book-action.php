@@ -1,5 +1,5 @@
 <?php
-    $record_ppage = 5;
+    $record_ppage = 6;
     function search($keyword) {
         require "data/connect-db.php";
         require "form.php";

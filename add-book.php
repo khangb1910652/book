@@ -2,9 +2,6 @@
 $page_title = "Book Management";
 include "templates/header-manage.php";
 ?>
-<?php
-    require "action/add-book-action.php";
-    ?>
 <div class='main_login'>
     <form style='height: 350px;' class='main_form' method="POST" acction = "" enctype="multipart/form-data">
         <h2 class='h2'>Add Book</h2>
@@ -27,6 +24,9 @@ include "templates/header-manage.php";
         </div>
     </form>
 </div>
+<?php
+    require "action/add-book-action.php";
+?>
 <?php
 include "templates/footer-manage.php";
 ?>

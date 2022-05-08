@@ -144,7 +144,7 @@ input:focus {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     justify-content: space-around;
-    justify-items: stretch
+    justify-items: stretch;
     align-items: stretch
 }
 
@@ -228,16 +228,16 @@ border-right-width: 2px;
     padding: 5px 5px;
     width: 25px;
     height: 25px;
-    background-color: #f0f3f6'
+    background-color: #f0f3f6;
     border-color: #000000;
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
     color: #30244a;
-    line-height: 24px
-    margin: 0px 5px 0px 0px
-    padding: 0px 12px
-    text-align: right
+    line-height: 24px;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 12px;
+    text-align: right;
 }
 
 a.button {
