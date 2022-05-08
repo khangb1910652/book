@@ -37,33 +37,32 @@
     }
     function form_edit_book($row){
         echo <<<_FORM_EDIT_BOOK
-        <form method="POST" action = "edit-book.php" enctype="multipart/form-data">
-            <input type="hidden" name="id_book" id="id_book" value="$row[id_book]">
-            <label for="bookname">Book Name</label>
-            <input type="text" name="bookname" id="bookname" value="$row[name_book]">
-            <br>
-            <label for="author">Author</label>
-            <input type="text" name="author" id="author" value="$row[author]">
-            <br>
-            <label for="des">Describe</label>
-            <input type="text" name="des" id="des" value="$row[des]">
-            <br>
-            
-            <label for="img">Image</label><br>
-            <img src="$row[img]"> <br>
-            <input type="hidden" name="img_cur" id="img_cur" value="$row[img]">
-            <label for="img">Choose another picture</label>
-            <input type="file" name="img" id="img">
-            <br>
-            <label for="idcat">Caterogy</label>
-            <select name="idcat">
-                <option value=$row[id_cat]>$row[name_cat]</option>
-                <option value=$row[id_cat]>Tạm thời chưa làm được đổi thể loại</option>
-            </select>
-            <br>
-            <input type="submit" name="edit_book" value="EDIT">
-            <input type="reset" value="Clear">
-        </form>
+        <div class='main_login'>
+            <form class='main_form' style='height: 500px' method="POST" action = "edit-book.php" enctype="multipart/form-data">
+                <h2 class='h2'>Edit Book</h2>
+                <div class='text-center' style='margin-bottom: 5px;'>
+                    <img src="$row[img]">
+                </div>
+                <input class='input_username' placeholder='Book Name' type="text" name="bookname" id="bookname" value="$row[name_book]">
+                <input class='input_username' placeholder='Author' type="text" name="author" id="author" value="$row[author]">
+                <input class='input_username' placeholder='Describe' type="text" name="des" id="des" value="$row[des]">
+                <div class='button_flex' style='width: 330px; margin-bottom: 30px;'>
+                    <label for="img">Change picture</label>&nbsp&nbsp&nbsp
+                    <input style='width: 200px' type="file" name="img" id="img">
+                </div>
+                <div class='button_flex' style='margin-bottom: 20px; width: 330px;'>
+                    <label for="idcat">Caterogy</label>&nbsp&nbsp&nbsp
+                    <select name="idcat">
+                        <option value=$row[id_cat]>$row[name_cat]</option>
+                        <option value=$row[id_cat]>Tạm thời chưa làm được đổi thể loại</option>
+                    </select>
+                </div>
+                <div class='button_flex'>
+                    <input class='button' type="submit" name="edit_book" value="EDIT">&nbsp&nbsp&nbsp
+                    <input class='button' style='background-color: #fff; color: #000;' type="reset" value="Clear">
+                </div>
+            </form>
+        </div>
         _FORM_EDIT_BOOK;
     }
 ?>
