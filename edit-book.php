@@ -2,7 +2,6 @@
 $page_title = "Book Management";
 include "templates/header-manage.php";
 ?>
-<h2>Edit Book</h2>
 <?php
     require "action/form.php";
     require "data/connect-db.php";

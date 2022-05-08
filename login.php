@@ -23,7 +23,7 @@ require "action/login-action.php";
                 <div class="form_username">
                     <input placeholder="Username" class="input_username" type="text" name="username" value="">
                 </div>
-                <div class="form_username">
+                <div class="form_username" style='margin-bottom: 20px;'>
                     <input placeholder="Password" class="input_password" type="password" name="password" value="">
                 </div>
                 <input class='button' type="submit" name="login" value="Login">
