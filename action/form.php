@@ -44,9 +44,11 @@
                 <div class='text-center' style='margin-bottom: 5px;'>
                     <img src="$row[img]">
                 </div>
+                <input type="hidden" name="id_book" id="id_book" value="$row[id_book]">
                 <input class='input_username' placeholder='Book Name' type="text" name="bookname" id="bookname" value="$row[name_book]">
                 <input class='input_username' placeholder='Author' type="text" name="author" id="author" value="$row[author]">
                 <input class='input_username' placeholder='Describe' type="text" name="des" id="des" value="$row[des]">
+                <input type="hidden" name="img_cur" id="img_cur" value="$row[img]">
                 <div class='button_flex' style='width: 330px; margin-bottom: 30px;'>
                     <label for="img">Change picture</label>&nbsp&nbsp&nbsp
                     <input style='width: 200px' type="file" name="img" id="img">
