@@ -4,7 +4,7 @@ include "templates/header-manage.php";
 ?>
 <div class='main'>
     <div class='nav-bar'>
-        <form class='search-form' action="action/find-book-edit-delete.php" method="POST">
+        <form class='search-form' action="delete-book-for-find.php" method="POST">
             <input placeholder='Type some books' type="search" name="search_kw" value="<?php empty($_REQUEST['search_kw']) || 
                                                                 print $_REQUEST['search_kw'];?>"/>
             <button type="submit" value="Search">
@@ -12,9 +12,12 @@ include "templates/header-manage.php";
         </form>
     </div>
 <?php
-    require 'action/find-book-edit-delete.php';
-    if (isset($_POST['search_kw'])) {
-        search($_POST['search_kw']);
+    if (isset($_REQUEST['search_kw'])) {
+        include 'action/find-book-edit-delete.php';
+        $paging = search($_REQUEST['search_kw']);
+        echo "<div class='temp'></div>";
+        echo "</div>";
+        page_nav_links($paging, $_REQUEST['search_kw']);
     }
 ?>
 <?php
