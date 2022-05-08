@@ -4,30 +4,26 @@ include "templates/header-manage.php";
 ?>
 
 
-<ul>
-    
-    <!-- <li>
-        <a href="list-book.php"><strong>List Book</strong></a>
-    </li>
-    <li>
-        <a href="find-book.php"><strong>Find Book</strong></a>
-    </li> -->
-    <li>
-        <a href="add-category.php"><strong>Add Category</strong></a>
-    </li>
-    <li>
-        <a href="add-book.php"><strong>Add Book</strong></a>
-    </li>
-    <!-- <li>
-        <a href="update-book.php"><strong>Update Book</strong></a>
-    </li> -->
-    <li>
-        <a href="edit-delete-book.php"><strong>Edit & Delete</strong></a>
-    </li>
-    <li>
-        <a href="signup.php"><strong>Add A Management Account</strong></a>
-    </li>
-</ul>
+<div class='main_login'>
+    <div class='main_form'>
+        <a class='custom_button clear' href="add-category.php">
+            <img class='fill_white fill_purple' src='image/add.svg' />&nbsp&nbsp&nbsp
+            Add Category
+        </a>
+        <a class='custom_button clear' href="add-book.php">
+            <img class='fill_white fill_purple' src='image/add.svg' />&nbsp&nbsp&nbsp    
+            Add Book
+        </a>
+        <a class='custom_button' href="edit-delete-book.php">
+            <img class='fill_white' src='image/editing.svg' />&nbsp&nbsp&nbsp    
+            Edit & Delete
+        </a>
+        <a class='custom_button clear' href="signup.php">
+            <img class='fill_white fill_purple' src='image/add.svg' />&nbsp&nbsp&nbsp    
+            Add Management Account
+        </a>
+    </div>
+</div>
 
 
 <?php

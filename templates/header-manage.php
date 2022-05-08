@@ -8,11 +8,14 @@
         <link rel="stylesheet" href="css/style.css?v=<?php echo time() ?>" />
     </head>
     <body>
-        <a class="log_out" href="logout.php"><img class="icon" src="image/logout.png"></a> 
-        <a class="back_to_home" href="management.php"><img class="icon" src="image/home.png"></a>
-        
-        <h1 class = "page-title"><?php echo $page_title; ?></h1>  
-        <hr>
+        <div class='header_bar'>
+            <a class="back_to_home" href="management.php"><img class="icon" src="image/home.svg"></a>
+            
+            <h1 class="page-title"><?php echo $page_title; ?></h1>  
+            <div class='float'>
+                <a class="log_out" href="logout.php"><img class="icon" src="image/logout.svg"></a> 
+            </div>
+        </div>
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
