@@ -16,7 +16,6 @@ include "templates/header-manage.php";
         </div>
     </form>
 </div>
-    <br> <a href="add-book.php">Go to post book</a>
 <?php
-include "templates/footer-manage.php";
+include "templates/footer.php";
 ?>

@@ -38,5 +38,5 @@ include "templates/header-manage.php";
 </form>
 <br> <a href="index.php">Back to home</a>
 <?php
-include "templates/footer-manage.php";
+include "templates/footer.php";
 ?>

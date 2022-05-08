@@ -198,7 +198,7 @@ button[type="submit"]:hover {
     margin-bottom: 10px;
     border: 2px solid black;
     border-left-width: 2px;
-border-right-width: 2px;
+    border-right-width: 2px;
     border-radius: 0.25rem;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     padding: 10px 10px;
@@ -261,5 +261,14 @@ a:visited {
 a {
     text-decoration: none;
 }
-
-
+.back_to_home{
+    float: right;
+}
+.log_out{
+    float: right;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+    padding: 5px 10px;
+}

@@ -31,5 +31,5 @@ include "templates/header-manage.php";
 
 
 <?php
-include "templates/footer-manage.php";
+include "templates/footer.php";
 ?>

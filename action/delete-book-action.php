@@ -1,5 +1,5 @@
 <?php 
-    require "data/connect-db.php";
+    // require "data/connect-db.php";
     if (isset($_POST['delete']) && isset($_POST['id_book'])) {
         $id_book = $_POST['id_book'];
         $query = "delete from book where id_book='$id_book'";

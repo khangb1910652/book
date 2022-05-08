@@ -1,5 +1,5 @@
 <?php
-    require "data/connect-db.php";
+    // require "data/connect-db.php";
     if(isset($_POST["edit_book"])){
         if ($_FILES['img']['error'] == 0) {
             move_uploaded_file($_FILES["img"]["tmp_name"],

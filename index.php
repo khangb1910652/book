@@ -14,5 +14,5 @@ include "templates/header.php";
     </li>
 </ul>
 <?php
-// include "templates/footer.php";
+include "templates/footer.php";
 ?> 

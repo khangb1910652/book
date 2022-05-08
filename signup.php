@@ -14,5 +14,5 @@ require "action/signup-action.php"
 </div>
     <!-- <br> <a href="login.php">Go to login</a> -->
 <?php
-include "templates/footer-manage.php";
+include "templates/footer.php";
 ?>

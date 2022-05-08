@@ -28,5 +28,5 @@ include "templates/header-manage.php";
     require "action/add-book-action.php";
 ?>
 <?php
-include "templates/footer-manage.php";
+include "templates/footer.php";
 ?>

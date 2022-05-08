@@ -16,6 +16,6 @@ include "templates/header-manage.php";
     require "action/edit-book-action.php";
 ?>
 <?php
-include "templates/footer-manage.php";
+include "templates/footer.php";
 ?>
 

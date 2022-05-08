@@ -2,6 +2,7 @@
 $page_title = "Book Management"; 
 include "templates/header-manage.php";
 ?>
+<h2>Edit & Delete Book</h2>
 <div class='main'>
     <div class='nav-bar'>
         <form class='search-form' action="edit-delete-book-for-find.php" method="POST">
@@ -21,16 +22,9 @@ include "templates/header-manage.php";
     }
 ?>
 <?php
-    require "data/connect-db.php";
-    require "action/form.php";
-    require "action/delete-book-action.php";
-    require "action/edit-delete-list.php";
-    require "action/edit-book-action.php";
-    echo "<div class='temp'></div>";
-    echo "</div>";
-    page_nav_links($paging);
+require "action/delete-book-action.php";
+require "action/edit-book-action.php";
 ?>
 <?php
 include "templates/footer.php";
 ?>
-

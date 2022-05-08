@@ -1,38 +1,4 @@
 <?php
-    // function search($keyword) {
-    //     require "data/connect-db.php";
-    //     require "form.php";
-    //     $search_kw = str_replace(" ", "%' OR name_book LIKE '%", trim($keyword));
-    //     $query = "SELECT * FROM book b join category c on b.id_cat = c.id_cat 
-    //             WHERE name_book LIKE '%$search_kw%'";
-    //     $result = $conn->query($query)
-    //     or die ("DB accessed failed: " . $conn->error);
-    //     $kq = $result->num_rows;
-    //     echo <<<_title
-    //         <h2>Search results:  $kq books</h2>
-    //     _title;
-    //     echo "<div class='body'>";
-    // while ($row = $result->fetch_assoc()){
-    //     echo "<div class='flex_column'>";
-    //     form_book($row);
-    //         echo "<div class='flex_center flex_grow'>";
-    //         edit_form($row);
-    //         echo "&nbsp&nbsp&nbsp";
-    //         del_form($row);
-    //         echo "</div>";
-    //         // echo "</div>";
-    //     echo "</div>";
-    // }
-    // echo "</div>";
-    //     if ($result->num_rows == 0)
-    //         echo <<<_WARING
-    //             <script>
-    //                 alert ("No title found");
-    //             </script>
-    //             _WARING;
-    // }
-
-    
     $record_ppage = 6;
     function search($keyword) {
         require "data/connect-db.php";
@@ -84,12 +50,12 @@
     function page_nav_links($paging, $search_kw) {
         echo "<div class='pagination'>";
 
-        echo "<a class='button' href='delete-book-for-find.php?" .
+        echo "<a class='button' href='edit-delete-book-for-find.php?search_kw=$search_kw" .
             "&page=" . $paging['p_prev'] ."'>Previous</a>&nbsp&nbsp&nbsp";
             
         echo "<input value=$paging[p_no]>&nbsp&nbsp";
         echo "<div> of &nbsp$paging[p_total]</div>&nbsp&nbsp&nbsp";
-        echo "<a class='button' href='delete-book-for-find.php?" .
+        echo "<a class='button' href='edit-delete-book-for-find.php?search_kw=$search_kw" .
             "&page=" . $paging['p_next'] ."'>Next</a>";
             
         echo "</div>";
