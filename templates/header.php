@@ -10,6 +10,6 @@
     <body>
         <div class='header_bar'>
             <a class="back_to_home" href="index.php"><img class="icon" src="image/home.svg"></a>
-            <!-- <h1 class = "page-title"><?php echo $page_title; ?></h1>  -->
+            <h1 class = "page-title"><?php echo $page_title; ?></h1> 
         </div>
 

@@ -11,7 +11,7 @@
         <div class='header_bar'>
             <a class="back_to_home" href="management.php"><img class="icon" src="image/home.svg"></a>
             
-            <!-- <h1 class="page-title"><?php echo $page_title; ?></h1>   -->
+            <h1 class="page-title"><?php echo $page_title; ?></h1>  
             <div class='float'>
                 <a class="log_out" href="logout.php"><img class="icon" src="image/logout.svg"></a> 
             </div>
