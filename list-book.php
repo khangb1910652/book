@@ -7,7 +7,9 @@ include "templates/header.php";
         <form class='search-form' action="find-book.php" method="POST">
             <input placeholder='Type some books' type="search" name="search_kw" value="<?php empty($_REQUEST['search_kw']) || 
                                                                 print $_REQUEST['search_kw'];?>"/>
-            <button type="submit" value="Search">
+            <button type="submit">
+                <img class='fill_white' src='image/search.svg' />
+            </button>
             <br>
         </form>
     </div>

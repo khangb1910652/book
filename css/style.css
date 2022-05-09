@@ -11,6 +11,16 @@ div.button_flex {
     display: flex;
 }
 
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.px-8 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -61,11 +71,35 @@ div.flex_between {
     align-items: center;
 }
 
-input.input_username {
-    border-width: 1px;
-    padding: 6px 4px;
+.input_username {
+    padding: 10px 8px;
     width: 320px;
+    margin-top: 10px;
+    border-radius: 0.125rem;
+    background-color: rgb(243 244 246);
+    border: 1px solid rgb(243 244 246);
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mb-10 {
     margin-bottom: 20px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.block {
+    display: block;
+    color: black;
+}
+
+.my-5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
  
 input.input_password {
@@ -143,12 +177,12 @@ input:focus {
 
 .main {
     display: flex;
+    margin-top: 20px;
 }
 
 .search-form {
     color: #555;
     display: flex;
-    padding: 2px;
     border: 1px solid currentColor;
     border-radius: 5px; 
 }
@@ -192,6 +226,11 @@ input:focus {
     flex-grow: 3;
 }
 
+.search_button {
+    background-color: #5551ff !important;
+    height: 38px;
+}
+
 input[type="search"] {
     border: none;
     background: transparent;
@@ -210,16 +249,14 @@ input[type="search"]::placeholder {
 }
 
 button[type="submit"] {
-    text-indent: -999px;
     overflow: hidden;
     width: 40px;
     padding: 0;
     margin: 0;
     border: 1px solid transparent;
-    border-radius: inherit;
-    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.9;
+    background-color: #5551ff
 }
   
 button[type="submit"]:hover {
@@ -312,3 +349,4 @@ a {
     height: 40px;
     padding: 5px 10px;
 }
+

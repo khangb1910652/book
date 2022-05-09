@@ -39,23 +39,32 @@
     function form_edit_book($row){
         echo <<<_FORM_EDIT_BOOK
         <div class='main_login'>
-            <form class='main_form' style='height: 500px' method="POST" action = "edit-book.php" enctype="multipart/form-data">
+            <form class='main_form' style='height: 640px' method="POST" action = "edit-book.php" enctype="multipart/form-data">
                 <h2 class='h2'>Edit Book</h2>
                 <div class='text-center' style='margin-bottom: 5px;'>
                     <img src="$row[img]">
                 </div>
                 <input type="hidden" name="id_book" id="id_book" value="$row[id_book]">
-                <input class='input_username' placeholder='Book Name' type="text" name="bookname" id="bookname" value="$row[name_book]">
-                <input class='input_username' placeholder='Author' type="text" name="author" id="author" value="$row[author]">
-                <input class='input_username' placeholder='Describe' type="text" name="des" id="des" value="$row[des]">
-                <input type="hidden" name="img_cur" id="img_cur" value="$row[img]">
-                <div class='button_flex' style='width: 330px; margin-bottom: 30px;'>
-                    <label for="img">Change picture</label>&nbsp&nbsp&nbsp
-                    <input style='width: 200px' type="file" name="img" id="img">
+                <div class='my-5'>
+                    <label for='bookname' class='block'>Book Name</label>
+                    <input class='input_username' placeholder='Book Name' type="text" name="bookname" id="bookname" value="$row[name_book]">
                 </div>
-                <div class='button_flex' style='margin-bottom: 20px; width: 330px;'>
-                    <label for="idcat">Caterogy</label>&nbsp&nbsp&nbsp
-                    <select name="idcat">
+                <div class='my-5'>
+                    <label for='bookname' class='block'>Book Name</label>
+                    <input class='input_username' placeholder='Author' type="text" name="author" id="author" value="$row[author]">
+                </div>
+                <div class='my-5'>
+                    <label for='bookname' class='block'>Book Name</label>
+                    <input class='input_username' placeholder='Describe' type="text" name="des" id="des" value="$row[des]">
+                </div>
+                <input type="hidden" name="img_cur" id="img_cur" value="$row[img]">
+                <div class='my-5'>
+                    <label for="img" class='block'>Change Picture</label>
+                    <input class='input_username' type="file" name="img" id="img">
+                </div>
+                <div class='mb-10 mt-5'>
+                    <label for="idcat" class='block'>Caterogy</label>
+                    <select style='width: 342px;' class='input_username' name="idcat">
                         <option value=$row[id_cat]>$row[name_cat]</option>
                         <option value=$row[id_cat]>Tạm thời chưa làm được đổi thể loại</option>
                     </select>

@@ -3,18 +3,27 @@ $page_title = "Book Management";
 include "templates/header-manage.php";
 ?>
 <div class='main_login'>
-    <form style='height: 350px;' class='main_form' method="POST" acction = "" enctype="multipart/form-data">
+    <form style='height: 500px' class='main_form px-8 py-8' method="POST" acction = "" enctype="multipart/form-data">
         <h2 class='h2'>Add Book</h2>
-        <input class='input_username' placeholder='Book Name' type="text" name="bookname" id="bookname">
-        <input class='input_username' placeholder='Author' type="text" name="author" id="author">
-        <input class='input_username' placeholder='Describe' type="text" name="des" id="des">
-        <div style='width: 320px; margin-bottom: 20px;' class='button_flex'>
-            <label style='margin-right: 34px;' for="img">Image</label>
-            <input type="file" name="img" id="img">
+        <div class='my-5'>
+            <label for='bookname' class='block'>Book Name</label>
+            <input class='input_username' placeholder='Book Name' type="text" name="bookname" id="bookname">
         </div>
-        <div style='width: 320px; margin-bottom: 20px' class='button_flex'>
-            <label for="idcat">Caterogy</label>&nbsp&nbsp&nbsp
-            <select name="idcat">
+        <div class='my-5'>
+            <label for='author' class='block'>Author</label>
+            <input class='input_username' placeholder='Author' type="text" name="author" id="author">
+        </div>
+        <div class='my-5'>
+            <label for='des' class='block'>Describe</label>
+            <input class='input_username' placeholder='Describe' type="text" name="des" id="des">
+        </div>
+        <div class='my-5'>
+            <label for="img" class='block'>Image</label>
+            <input class='input_username' type="file" name="img" id="img">
+        </div>
+        <div class='mb-10 mt-5'>
+            <label for="idcat" class='block'>Caterogy</label>
+            <select style='width: 342px;' class='input_username' name="idcat">
                 <?php require "action/options-category.php";?>
             </select>
         </div>

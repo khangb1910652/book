@@ -20,11 +20,13 @@ require "action/login-action.php";
                 </svg>
                 &nbsp&nbspLogin Now
             </p>
-                <div class="form_username">
+                <div class='my-5'>
+                    <label for='username' class='block'>Username</label>
                     <input placeholder="Username" class="input_username" type="text" name="username" value="">
                 </div>
-                <div class="form_username" style='margin-bottom: 20px;'>
-                    <input placeholder="Password" class="input_password" type="password" name="password" value="">
+                <div class='mt-5 mb-10'>
+                    <label for='username' class='block'>Password</label>
+                    <input placeholder="Password" class="input_username" type="password" name="password" value="">
                 </div>
                 <input class='button' type="submit" name="login" value="Login">
         </form>
