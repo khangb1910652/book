@@ -1,5 +1,5 @@
 <?php
-$page_title = "Book Management";
+$page_title = "Books";
 include "templates/header.php";
 ?>
 <div class='main_login'>
@@ -10,11 +10,11 @@ include "templates/header.php";
         </a>
         <a class='custom_button clear' href="list-book.php">
             <img class='fill_white fill_purple' src='image/file.svg' />&nbsp&nbsp&nbsp
-            List Book
+            List Of Books
         </a>
         <a class='custom_button clear' href="find-book.php">
             <img class='fill_white fill_purple' src='image/search.svg' />&nbsp&nbsp&nbsp
-            Find Book
+            Find Books By Title
         </a>
     </div>
 </div>

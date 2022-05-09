@@ -1,5 +1,5 @@
 <?php
-$page_title = "Book Management";
+$page_title = "List Of Books";
 include "templates/header.php";
 ?>
 <div class='main'>
@@ -18,7 +18,9 @@ include "templates/header.php";
         $paging = list_book();
         echo "<div class='temp'></div>";
         echo "</div>";
-        page_nav_links($paging);
+        if("$paging[p_total]">0){
+            page_nav_links($paging);
+            }
     ?>
 
 <?php

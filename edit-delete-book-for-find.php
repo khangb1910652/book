@@ -1,8 +1,7 @@
 <?php
-$page_title = "Book Management"; 
+$page_title = "Find Books To Delete And Edit"; 
 include "templates/header-manage.php";
 ?>
-<h2>Edit & Delete Book</h2>
 <div class='main'>
     <div class='nav-bar'>
         <form class='search-form' action="edit-delete-book-for-find.php" method="POST">
@@ -18,7 +17,9 @@ include "templates/header-manage.php";
         $paging = search($_REQUEST['search_kw']);
         echo "<div class='temp'></div>";
         echo "</div>";
-        page_nav_links($paging, $_REQUEST['search_kw']);
+        if("$paging[p_total]">0){
+            page_nav_links($paging, $_REQUEST['search_kw']);
+        }
     }
 ?>
 <?php
