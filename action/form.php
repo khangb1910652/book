@@ -38,8 +38,8 @@
     }
     function form_edit_book($row){
         echo <<<_FORM_EDIT_BOOK
-        <div class='main_login' style='height: 100vh;'>
-            <form class='main_form' style='height: 720px; margin-top: 70px;' method="POST" action = "edit-book.php" enctype="multipart/form-data">
+        <div class='main_login' style='height: 110vh;'>
+            <form class='main_form' style='height: 720px; margin-top: 50px; margin-bottom: 20px' method="POST" action = "edit-book.php" enctype="multipart/form-data">
                 <h2 class='h2' >Edit Book</h2>
                 <div class='text-center' style='margin-bottom: 5px;'>
                     <img src="$row[img]">

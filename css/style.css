@@ -45,7 +45,7 @@ div.main_login {
     align-items: center;
     justify-content: center;
     height: 80vh;
-    width: 100vw;
+    width: 98vw;
 }
 
 .main_form {
@@ -142,6 +142,7 @@ input.input_password {
     align-items: center;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
+    font-size: 10px;
 }
 
 .float {
@@ -346,7 +347,7 @@ a {
 }
 .icon{
     width: 40px;
-    height: 40px;
+    height: 20px;
     padding: 5px 10px;
 }
 
