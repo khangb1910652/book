@@ -39,7 +39,7 @@
     function form_edit_book($row){
         echo <<<_FORM_EDIT_BOOK
         <div class='main_login'>
-            <form class='main_form' style='height: 640px' method="POST" action = "edit-book.php" enctype="multipart/form-data">
+            <form class='main_form' style='height: 720px; margin-top: 20px;' method="POST" action = "edit-book.php" enctype="multipart/form-data">
                 <h2 class='h2'>Edit Book</h2>
                 <div class='text-center' style='margin-bottom: 5px;'>
                     <img src="$row[img]">
